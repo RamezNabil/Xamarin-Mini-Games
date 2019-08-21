@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App13.MinesweeperPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="Black">
+                
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+               
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Score" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="18" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+
+            <Label Text="0" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="18" x:Name="score" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+
+            <Label Text="GAME OVER" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="18" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" x:Name="gameOverLabel" IsVisible="False"></Label>
+
+            <Button Text="Play Again" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        FontSize="16" Grid.Row="1" Grid.Column="2" x:Name="playAgainBTN" Clicked="PlayAgainBTN_Clicked"
+                        BackgroundColor="Gray" IsVisible="False" Grid.ColumnSpan="2"></Button>
+
+            <Button Text="Tutorial" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        FontSize="16" Grid.Row="0" Grid.Column="4" x:Name="tutorialBTN"
+                        Clicked="TutorialBTN_Clicked" BackgroundColor="Gray" Grid.ColumnSpan="2" ></Button>
+
+            <Button Image="flag.png" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        FontSize="18" Grid.Row="1" Grid.Column="4" x:Name="flagBTN" Text="6"
+                        Clicked="FlagBTN_Clicked" BackgroundColor="Gray" Grid.ColumnSpan="2" ></Button>
+
+            <Button ClassId="0" x:Name="b0" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="1" x:Name="b1" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="2" x:Name="b2" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="3" x:Name="b3" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="4" x:Name="b4" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="5" x:Name="b5" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button ClassId="6" x:Name="b6" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="7" x:Name="b7" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="8" x:Name="b8" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="9" x:Name="b9" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="10" x:Name="b10" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="11" x:Name="b11" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button ClassId="12" x:Name="b12" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="13" x:Name="b13" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="14" x:Name="b14" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="15" x:Name="b15" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="16" x:Name="b16" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="17" x:Name="b17" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button ClassId="18" x:Name="b18" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="19" x:Name="b19" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="20" x:Name="b20" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="21" x:Name="b21" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="22" x:Name="b22" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="23" x:Name="b23" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button ClassId="24" x:Name="b24" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="25" x:Name="b25" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="26" x:Name="b26" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="27" x:Name="b27" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="28" x:Name="b28" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="29" x:Name="b29" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button ClassId="30" x:Name="b30" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="7" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="31" x:Name="b31" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="7" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="32" x:Name="b32" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="7" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="33" x:Name="b33" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="7" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="34" x:Name="b34" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="7" Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button ClassId="35" x:Name="b35" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="7" Grid.Column="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

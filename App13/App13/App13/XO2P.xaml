@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App13.XO2P"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black" RowSpacing="1" ColumnSpacing="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="p1" Text="Player 1" FontSize="Large" TextColor="Aqua" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Gray"></Label>
+                <Label x:Name="p2" Text="Player 2" FontSize="Large" TextColor="Aqua" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Label x:Name="scorep1" Text="0" FontSize="Large" TextColor="Aqua" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Label x:Name="scorep2" Text="0" FontSize="Large" TextColor="Aqua" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+                <Label x:Name="gameover" IsVisible="False" Text="Game Over" FontSize="Large" TextColor="Aqua" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Button  Clicked="Play_Clicked" x:Name="playagain" IsVisible="False" Text="Play Again" Grid.Row="1" Grid.Column="1" FontSize="Medium" TextColor="Aqua" HorizontalOptions="Center" VerticalOptions="Center"></Button>
+            </Grid>
+            <Button x:Name="b1" Grid.Row="1" Grid.Column="0" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+            <Button x:Name="b2" Grid.Row="1" Grid.Column="1" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+            <Button x:Name="b3" Grid.Row="1" Grid.Column="2" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+
+            <Button x:Name="b4" Grid.Row="2" Grid.Column="0" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+            <Button x:Name="b5" Grid.Row="2" Grid.Column="1" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+            <Button x:Name="b6" Grid.Row="2" Grid.Column="2" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+
+            <Button x:Name="b7" Grid.Row="3" Grid.Column="0" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+            <Button x:Name="b8" Grid.Row="3" Grid.Column="1" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+            <Button x:Name="b9" Grid.Row="3" Grid.Column="2" FontSize="60" TextColor="Aqua" Clicked="Button_Clicked" Text=""></Button>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App13.Match"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Score" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="16" Grid.Row="0" Grid.Column="0" ></Label>
+
+            <Label Text="0" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="16" x:Name="score" Grid.Row="1" Grid.Column="0"></Label>
+
+            <Label Text="Lifes" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="16" Grid.Row="0" Grid.Column="1" ></Label>
+
+            <Label Text="20" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="16" x:Name="lifes" Grid.Row="1" Grid.Column="1"></Label>
+
+            <Label Text="Game Over" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="16" Grid.Row="0" Grid.Column="2" x:Name="gameOverLabel" IsVisible="False"></Label>
+
+            <Button Text="Play Again" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        FontSize="13" Grid.Row="1" Grid.Column="2" x:Name="playAgainBTN" Clicked="PlayAgainBTN_Clicked"
+                        BackgroundColor="Gray" IsVisible="False"></Button>
+
+            <Button Text="Tutorial" TextColor="Aqua" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        FontSize="13" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" x:Name="tutorialBTN"
+                        Clicked="TutorialBTN_Clicked" BackgroundColor="Gray"></Button>
+
+
+            <Button x:Name="b0" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b1" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b2" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b3" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button x:Name="b4" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b5" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b6" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b7" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            
+            <Button x:Name="b8" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b9" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b10" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b11" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+            <Button x:Name="b12" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b13" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b14" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+            <Button x:Name="b15" Text="" BackgroundColor="LightGray" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="100"></Button>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

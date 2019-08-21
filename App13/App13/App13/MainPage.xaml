@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App13"
+             x:Class="App13.MainPage">
+
+    <StackLayout BackgroundColor="Black" Padding="10,20,10,0">
+        
+        <StackLayout Orientation="Horizontal">
+            <Image Source="pic.jpg" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+            <Label Text="Welcome To The Arcade" TextColor="Aqua" FontSize="20" HorizontalOptions="Center"
+                   VerticalOptions="Center"></Label>
+            <Image Source="pic.jpg" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+        </StackLayout>
+        
+        <Label Text="___________________________________" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+               TextColor="Azure"></Label>
+        <Button Clicked="MineBTN_Clicked" x:Name="mineBTN" Text="Minesweeper" TextColor="Aqua" FontSize="20" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" BackgroundColor="Gray"></Button>
+        <Button Clicked="MatchBTN_Clicked" x:Name="matchBTN" Text="Matching" TextColor="Aqua" FontSize="20" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" BackgroundColor="Gray"></Button>
+        <Button Clicked="XOBTN_Clicked" x:Name="XOBTN" Text="X-O" TextColor="Aqua" FontSize="20" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" BackgroundColor="Gray"></Button>
+        <Label Text="___________________________________" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+               TextColor="Azure"></Label>
+    </StackLayout>
+
+</ContentPage>
